@@ -3,7 +3,7 @@ import style from "./IncrementDecrement.module.css";
 
 function IncrementDecrement() {
   let result = 0
-  function handleDecrementButton() {
+  function handleDecrementButton() { //exemplo de função que não da certo no react
     result--
   }
   // estado - state
@@ -12,9 +12,9 @@ function IncrementDecrement() {
   // function handleDecrementcount() {
   //   setCount(count - 1)
   // }
-  function handleincrementcount() {
-    setCount(count + 1)
-  }
+  // function handleincrementcount() {
+  //   setCount(count + 1)
+  // }
 
   return (
     <div className={style.container}>
@@ -32,19 +32,17 @@ function IncrementDecrement() {
         </button>
       </div>
 
-
       <hr />
-
- 
+      {/*  pode fazer direto  39 e 44 ou pode chamar as funções 12 e 16 */}
       <div className={style.counter}>
         <span>Usando estado</span>
-        <button onClick={()=> setCount(count - 1)}>
+        <button onClick={() => setCount(count - 1)}>
           <span> - </span>
         </button>
 
         <span className={style.value}>{count}</span>
 
-        <button onClick={handleincrementcount}>
+        <button onClick={() => setCount(count + 1)}>
           <span> + </span>
         </button>
       </div>
