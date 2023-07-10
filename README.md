@@ -22,3 +22,45 @@
    npm run dev
    ```
    
+   código css de exemplo
+.container{
+    max-width: auto;
+    margin:0 auto;
+    padding: 20rem;
+    border: 1px solid;
+    border-radius: 8px;
+    color: #4caf50;
+}
+.container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.counter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.value{
+    width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.container button{
+   background-color: #4caf50;
+   color: white;
+   border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 1rem;
+
+}
+.container span{
+   
+    margin: 1rem 1rem;
+
+}
