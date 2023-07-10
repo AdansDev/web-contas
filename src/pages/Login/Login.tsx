@@ -5,7 +5,7 @@ import {
   FormControl,
   FormLabel,
   Input,
-  Icon
+  Icon,
 } from "@chakra-ui/react";
 import { PiUserCircleBold } from "react-icons/pi"
 import { useState } from "react"

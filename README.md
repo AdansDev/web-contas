@@ -7,7 +7,7 @@
  1. faça o clone do projeto em uma pasta de sua preferência com o comando:
 
     ```shell
-    git clone
+    git clone "Link do Git Hub do projeto"
     ```
 
 1. Instale as dependências do projeto com o comando:
