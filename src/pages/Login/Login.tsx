@@ -40,7 +40,7 @@ export function Login() {
 
           <Flex flexDir={"column"} gap={6}>
             <FormControl>
-              <FormLabel fontSize={"20"} color={"purple.300"}>Email </FormLabel>
+              <FormLabel fontSize={"20"} color={"purple.300"}>E-mail</FormLabel>
               <Input placeholder={"E-mail"}
                 color={"blue.500"}
                 bg={"ActiveCaption"}
