@@ -1,15 +1,15 @@
 import {
-  Card, CardBody,
   Button,
+  Card, CardBody,
   Flex,
   FormControl,
   FormLabel,
-  Input,
   Icon,
+  Input
 } from "@chakra-ui/react";
-import { PiUserCircleBold } from "react-icons/pi"
-import { useState } from "react"
 import axios from "axios";
+import { useState } from "react";
+import { PiUserCircleBold } from "react-icons/pi";
 
 export function Login() {
   const [email, setEmail] = useState('');
@@ -49,13 +49,15 @@ export function Login() {
               />
             </FormControl>
             <FormControl>
-              <FormLabel fontSize={"20"} color={"purple.300"}>Senha </FormLabel>
+              <FormLabel fontSize="20" color={"purple.300"}>Senha </FormLabel>
               <Input placeholder={"Senha"} color={"blue.500"} bg={"ActiveCaption"}
                 value={password}
                 onChange={(event) => setPassword(event.target.value)}
               />
             </FormControl>
             <Button onClick={handleLogin} colorScheme="purple">ACESSAR</Button>
+            
+         
           </Flex>
 
         </CardBody>
