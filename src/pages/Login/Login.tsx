@@ -28,6 +28,9 @@ export function Login() {
     }
   }
 
+  function handleChangeEmail(event: React.ChangeEvent<HTMLInputElement>)
+  console.log('E-mail', event.target.value);
+  setEmail('E-mail', event.target.value);
   return (
     <>
 
@@ -38,14 +41,15 @@ export function Login() {
           </Flex>
 
 
+ 
           <Flex flexDir={"column"} gap={6}>
             <FormControl>
               <FormLabel fontSize={"20"} color={"purple.300"}>E-mail</FormLabel>
-              <Input placeholder={"E-mail"}
+              <Input placeholder="E-mail"
                 color={"blue.500"}
                 bg={"ActiveCaption"}
                 value={email}
-                onChange={(event) => setEmail(event.target.value)}
+                onChange={(event) => handleChangeEmail(event)}
               />
             </FormControl>
             <FormControl>
