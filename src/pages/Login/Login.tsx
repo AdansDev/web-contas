@@ -14,10 +14,11 @@ import { PiUserCircleBold } from "react-icons/pi";
 export function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  console.log(setEmail);
+  
 
   async function handleLogin() {
-    console.log('clicou');
+    console.log('Email' , email);
+    console.log('Senha' , password);
     try {
       const response = await axios.post('http://localhost:3000/login', {
         email: email,
@@ -28,9 +29,7 @@ export function Login() {
       console.error('Ocorreu um erro', error)
     }
   }
-
-  
-  return (
+    return (
     <>
 
       <Card p={8} rounded={12} bg={"blackAlpha.400"}>
@@ -54,7 +53,9 @@ export function Login() {
             </FormControl>
             <FormControl>
               <FormLabel fontSize="20" color={"purple.300"}>Senha </FormLabel>
-              <Input placeholder={"Senha"} color={"blue.500"} bg={"ActiveCaption"}
+              <Input placeholder={"Senha"} 
+              color={"blue.500"} 
+              bg={"ActiveCaption"}
                 value={password}
                 onChange={(event) => setPassword(event.target.value)}
               />
