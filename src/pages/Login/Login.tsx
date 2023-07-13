@@ -14,6 +14,7 @@ import { PiUserCircleBold } from "react-icons/pi";
 export function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  console.log(setEmail);
 
   async function handleLogin() {
     console.log('clicou');
@@ -28,9 +29,7 @@ export function Login() {
     }
   }
 
-  function handleChangeEmail(event: React.ChangeEvent<HTMLInputElement>)
-  console.log('E-mail', event.target.value);
-  setEmail('E-mail', event.target.value);
+  
   return (
     <>
 
@@ -49,7 +48,8 @@ export function Login() {
                 color={"blue.500"}
                 bg={"ActiveCaption"}
                 value={email}
-                onChange={(event) => handleChangeEmail(event)}
+                onChange={(event) =>setEmail(event.target.value)}
+                
               />
             </FormControl>
             <FormControl>
